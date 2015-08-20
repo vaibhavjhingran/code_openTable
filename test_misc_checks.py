@@ -2,7 +2,7 @@ import unittest
 import requests
 
 
-class TestO(unittest.TestCase):
+class TestMiscOperations(unittest.TestCase):
 
 	def setUp(self):
 		self.base_url = "https://www.calcatraz.com/calculator/api?c=12%2B3"
