@@ -1,0 +1,83 @@
+Issues:
+
+***********************************************************************************************************************************
+
+1. Zero is not displayed as an answer.
+
+Description:
+
+When performing addition operation such that the answer amounts to zero, the page does not display any result. 
+
+Example: 
+
+Link used: https://www.calcatraz.com/calculator/api?c=-3%2B-3
+
+Result should be displayed as 0.
+
+Instead the page returns a blank.
+
+
+************************************************************************************************************************************
+
+2. Negative Numbers are not displayed as an answer.
+
+Description:
+
+When performing addition operation such that the answer amounts to a negative number, the page does not display any result. 
+
+Example: 
+
+Link used: https://www.calcatraz.com/calculator/api?c=-7%2B5
+
+Result should be displayed as -2.
+
+Instead the page returns a blank.
+
+*************************************************************************************************************************************
+
+3. When adding special characters, 'answer' is displayed.
+
+Description:
+
+When performing addition operation with special characters (like: #$%), the page displays "answer" as the result. 
+
+Example: 
+
+Link used: https://www.calcatraz.com/calculator/api?c=$%#%2B(*&
+
+Page should display a warning or Error notifying the user.
+
+Instead the page returns 'answer'.
+
+*************************************************************************************************************************************
+
+4. When adding alphabets characters, 'answer' is displayed.
+
+Description:
+
+When performing addition operation with alphabets, the page displays "answer" as the result. 
+
+Example: 
+
+Link used: https://www.calcatraz.com/calculator/api?c=foo%2Bbar
+
+Page should display a warning or Error notifying the user.
+
+Instead the page returns 'answer'.
+ 
+**************************************************************************************************************************************
+
+5. When passing blank values in place of numbers, the page returns a blank.
+
+Description:
+
+When performing addition operation without any numbers, instead passing blanks, the page returns a blank page as the result. 
+
+Example: 
+
+Link used: https://www.calcatraz.com/calculator/api?c=%2B
+
+Page should display a warning or Error notifying the user.
+
+Instead the page returns a blank page.
+

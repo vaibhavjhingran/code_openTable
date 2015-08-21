@@ -2,6 +2,7 @@ import unittest
 import os
 import requests
 import json
+import re
 
 class TestCalcAPI(unittest.TestCase):
 

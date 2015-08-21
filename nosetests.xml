@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite name="nosetests" tests="18" errors="3" failures="5" skip="0"><testcase classname="test_misc_checks.TestMiscOperations" name="test_check_http_status_code" time="1.676"><system-out><![CDATA[HTTP Response Code: 
+200
+]]></system-out></testcase><testcase classname="test_misc_checks.TestMiscOperations" name="test_page_encoding" time="1.136"><system-out><![CDATA[ISO-8859-1
+]]></system-out></testcase><testcase classname="test_open_table_addition_code.TestCalcAPI" name="test_add_all_zeroes" time="0.630"><error type="exceptions.ValueError" message='No JSON object could be decoded&#10;-------------------- &gt;&gt; begin captured stdout &lt;&lt; ---------------------&#10;No answer available from the requested URL...&#10;Exception Caught:&#10;No JSON object could be decoded&#10;&#10;--------------------- &gt;&gt; end captured stdout &lt;&lt; ----------------------&#10;-------------------- &gt;&gt; begin captured logging &lt;&lt; --------------------&#10;requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): www.calcatraz.com&#10;requests.packages.urllib3.connectionpool: DEBUG: "GET /calculator/api?c=0%2B0 HTTP/1.1" 200 1024&#10;--------------------- &gt;&gt; end captured logging &lt;&lt; ---------------------'><![CDATA[  File "C:\Python27\lib\unittest\case.py", line 329, in run
+    testMethod()
+  File "D:\Userfiles\vjhingran\Desktop\code_openTable\test_open_table_addition_code.py", line 104, in test_add_all_zeroes
+    print "\nAnswer from link: " + str(trial.json())
+  File "C:\Python27\lib\site-packages\requests-2.7.0-py2.7.egg\requests\models.py", line 819, in json
+    return json.loads(self.text, **kwargs)
+  File "C:\Python27\lib\json\__init__.py", line 338, in loads
+    return _default_decoder.decode(s)
+  File "C:\Python27\lib\json\decoder.py", line 366, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Python27\lib\json\decoder.py", line 384, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+'No JSON object could be decoded\n-------------------- >> begin captured stdout << ---------------------\nNo answer available from the requested URL...\nException Caught:\nNo JSON object could be decoded\n\n--------------------- >> end captured stdout << ----------------------\n-------------------- >> begin captured logging << --------------------\nrequests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): www.calcatraz.com\nrequests.packages.urllib3.connectionpool: DEBUG: "GET /calculator/api?c=0%2B0 HTTP/1.1" 200 1024\n--------------------- >> end captured logging << ---------------------']]></error><system-out><![CDATA[No answer available from the requested URL...
+Exception Caught:
+No JSON object could be decoded
+]]></system-out></testcase><testcase classname="test_open_table_addition_code.TestCalcAPI" name="test_add_alphabets" time="0.000"><failure type="exceptions.AssertionError" message="Cannot add aphabets characters!"><![CDATA[Traceback (most recent call last):
+  File "C:\Python27\lib\unittest\case.py", line 329, in run
+    testMethod()
+  File "D:\Userfiles\vjhingran\Desktop\code_openTable\test_open_table_addition_code.py", line 227, in test_add_alphabets
+    'Cannot add aphabets characters!')
+  File "C:\Python27\lib\unittest\case.py", line 422, in assertTrue
+    raise self.failureException(msg)
+AssertionError: Cannot add aphabets characters!
+]]></failure></testcase><testcase classname="test_open_table_addition_code.TestCalcAPI" name="test_add_big_numbers" time="0.359"><system-out><![CDATA[
+Answer from link: 1000000000.0
+Test Passed.
+]]></system-out></testcase><testcase classname="test_open_table_addition_code.TestCalcAPI" name="test_add_both_negative_numbers" time="0.378"><error type="exceptions.ValueError" message='No JSON object could be decoded&#10;-------------------- &gt;&gt; begin captured stdout &lt;&lt; ---------------------&#10;No answer available from the requested URL...&#10;Exception Caught:&#10;No JSON object could be decoded&#10;&#10;--------------------- &gt;&gt; end captured stdout &lt;&lt; ----------------------&#10;-------------------- &gt;&gt; begin captured logging &lt;&lt; --------------------&#10;requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): www.calcatraz.com&#10;requests.packages.urllib3.connectionpool: DEBUG: "GET /calculator/api?c=-2%2B-5 HTTP/1.1" 200 1024&#10;--------------------- &gt;&gt; end captured logging &lt;&lt; ---------------------'><![CDATA[  File "C:\Python27\lib\unittest\case.py", line 329, in run
+    testMethod()
+  File "D:\Userfiles\vjhingran\Desktop\code_openTable\test_open_table_addition_code.py", line 45, in test_add_both_negative_numbers
+    print "\nAnswer from link: " + str(trial.json())
+  File "C:\Python27\lib\site-packages\requests-2.7.0-py2.7.egg\requests\models.py", line 819, in json
+    return json.loads(self.text, **kwargs)
+  File "C:\Python27\lib\json\__init__.py", line 338, in loads
+    return _default_decoder.decode(s)
+  File "C:\Python27\lib\json\decoder.py", line 366, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Python27\lib\json\decoder.py", line 384, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+'No JSON object could be decoded\n-------------------- >> begin captured stdout << ---------------------\nNo answer available from the requested URL...\nException Caught:\nNo JSON object could be decoded\n\n--------------------- >> end captured stdout << ----------------------\n-------------------- >> begin captured logging << --------------------\nrequests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): www.calcatraz.com\nrequests.packages.urllib3.connectionpool: DEBUG: "GET /calculator/api?c=-2%2B-5 HTTP/1.1" 200 1024\n--------------------- >> end captured logging << ---------------------']]></error><system-out><![CDATA[No answer available from the requested URL...
+Exception Caught:
+No JSON object could be decoded
+]]></system-out></testcase><testcase classname="test_open_table_addition_code.TestCalcAPI" name="test_add_check" time="0.354"><system-out><![CDATA[
+Answer from link: 8
+Test Passed.
+]]></system-out></testcase><testcase classname="test_open_table_addition_code.TestCalcAPI" name="test_add_first_negative_number" time="0.359"><system-out><![CDATA[
+Answer from link: 3
+]]></system-out></testcase><testcase classname="test_open_table_addition_code.TestCalcAPI" name="test_add_first_num_as_zero" time="0.350"><failure type="exceptions.AssertionError" message='1 != 7&#10;-------------------- &gt;&gt; begin captured stdout &lt;&lt; ---------------------&#10;&#10;Answer from link: 1&#10;&#10;--------------------- &gt;&gt; end captured stdout &lt;&lt; ----------------------&#10;-------------------- &gt;&gt; begin captured logging &lt;&lt; --------------------&#10;requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): www.calcatraz.com&#10;requests.packages.urllib3.connectionpool: DEBUG: "GET /calculator/api?c=0%2B1 HTTP/1.1" 200 1025&#10;--------------------- &gt;&gt; end captured logging &lt;&lt; ---------------------'><![CDATA[  File "C:\Python27\lib\unittest\case.py", line 329, in run
+    testMethod()
+  File "D:\Userfiles\vjhingran\Desktop\code_openTable\test_open_table_addition_code.py", line 143, in test_add_first_num_as_zero
+    self.assertEqual(trial.json(), 7)
+  File "C:\Python27\lib\unittest\case.py", line 513, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Python27\lib\unittest\case.py", line 506, in _baseAssertEqual
+    raise self.failureException(msg)
+'1 != 7\n-------------------- >> begin captured stdout << ---------------------\n\nAnswer from link: 1\n\n--------------------- >> end captured stdout << ----------------------\n-------------------- >> begin captured logging << --------------------\nrequests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): www.calcatraz.com\nrequests.packages.urllib3.connectionpool: DEBUG: "GET /calculator/api?c=0%2B1 HTTP/1.1" 200 1025\n--------------------- >> end captured logging << ---------------------']]></failure><system-out><![CDATA[
+Answer from link: 1
+]]></system-out></testcase><testcase classname="test_open_table_addition_code.TestCalcAPI" name="test_add_second_negative_number" time="0.363"><system-out><![CDATA[
+Answer from link: 4
+]]></system-out></testcase><testcase classname="test_open_table_addition_code.TestCalcAPI" name="test_add_special_characters" time="0.000"><failure type="exceptions.AssertionError" message="Cannot add special characters!"><![CDATA[Traceback (most recent call last):
+  File "C:\Python27\lib\unittest\case.py", line 329, in run
+    testMethod()
+  File "D:\Userfiles\vjhingran\Desktop\code_openTable\test_open_table_addition_code.py", line 213, in test_add_special_characters
+    'Cannot add special characters!')
+  File "C:\Python27\lib\unittest\case.py", line 422, in assertTrue
+    raise self.failureException(msg)
+AssertionError: Cannot add special characters!
+]]></failure></testcase><testcase classname="test_open_table_addition_code.TestCalcAPI" name="test_add_with_second_num_as_zero" time="0.350"><system-out><![CDATA[
+Answer from link: 7
+]]></system-out></testcase><testcase classname="test_open_table_addition_code.TestCalcAPI" name="test_blanks" time="0.372"><system-out><![CDATA[Empty Values. Cannot add.
+Test Failed.
+]]></system-out></testcase><testcase classname="test_open_table_addition_code.TestCalcAPI" name="test_change_addition_operation" time="0.996"><error type="exceptions.ValueError" message='No JSON object could be decoded&#10;-------------------- &gt;&gt; begin captured logging &lt;&lt; --------------------&#10;requests.packages.urllib3.connectionpool: INFO: Starting new HTTPS connection (1): www.calcatraz.com&#10;requests.packages.urllib3.connectionpool: DEBUG: "GET /api?c=5%3B7 HTTP/1.1" 404 767&#10;--------------------- &gt;&gt; end captured logging &lt;&lt; ---------------------'><![CDATA[  File "C:\Python27\lib\unittest\case.py", line 329, in run
+    testMethod()
+  File "D:\Userfiles\vjhingran\Desktop\code_openTable\test_open_table_addition_code.py", line 236, in test_change_addition_operation
+    print trial.json()
+  File "C:\Python27\lib\site-packages\requests-2.7.0-py2.7.egg\requests\models.py", line 819, in json
+    return json.loads(self.text, **kwargs)
+  File "C:\Python27\lib\json\__init__.py", line 338, in loads
+    return _default_decoder.decode(s)
+  File "C:\Python27\lib\json\decoder.py", line 366, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Python27\lib\json\decoder.py", line 384, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+'No JSON object could be decoded\n-------------------- >> begin captured logging << --------------------\nrequests.packages.urllib3.connectionpool: INFO: Starting new HTTPS connection (1): www.calcatraz.com\nrequests.packages.urllib3.connectionpool: DEBUG: "GET /api?c=5%3B7 HTTP/1.1" 404 767\n--------------------- >> end captured logging << ---------------------']]></error></testcase><testcase classname="test_open_table_addition_code.TestCalcAPI" name="test_leave_first_field_blank" time="0.346"><failure type="exceptions.AssertionError" message='&#10;-------------------- &gt;&gt; begin captured stdout &lt;&lt; ---------------------&#10;&#10; Answer from the link: 7&#10;Shows only the second number. Need the first number to calculate addition.&#10;&#10;--------------------- &gt;&gt; end captured stdout &lt;&lt; ----------------------&#10;-------------------- &gt;&gt; begin captured logging &lt;&lt; --------------------&#10;requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): www.calcatraz.com&#10;requests.packages.urllib3.connectionpool: DEBUG: "GET /calculator/api?c=%2B7 HTTP/1.1" 200 1025&#10;--------------------- &gt;&gt; end captured logging &lt;&lt; ---------------------'><![CDATA[  File "C:\Python27\lib\unittest\case.py", line 329, in run
+    testMethod()
+  File "D:\Userfiles\vjhingran\Desktop\code_openTable\test_open_table_addition_code.py", line 186, in test_leave_first_field_blank
+    raise AssertionError
+'\n-------------------- >> begin captured stdout << ---------------------\n\n Answer from the link: 7\nShows only the second number. Need the first number to calculate addition.\n\n--------------------- >> end captured stdout << ----------------------\n-------------------- >> begin captured logging << --------------------\nrequests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): www.calcatraz.com\nrequests.packages.urllib3.connectionpool: DEBUG: "GET /calculator/api?c=%2B7 HTTP/1.1" 200 1025\n--------------------- >> end captured logging << ---------------------']]></failure><system-out><![CDATA[
+ Answer from the link: 7
+Shows only the second number. Need the first number to calculate addition.
+]]></system-out></testcase><testcase classname="test_open_table_addition_code.TestCalcAPI" name="test_leave_second_field_blank" time="0.415"><failure type="exceptions.AssertionError" message='&#10;-------------------- &gt;&gt; begin captured stdout &lt;&lt; ---------------------&#10;&#10; Answer from the link: 9&#10;Shows only the second number. Need the second number to calculate addition.&#10;&#10;--------------------- &gt;&gt; end captured stdout &lt;&lt; ----------------------&#10;-------------------- &gt;&gt; begin captured logging &lt;&lt; --------------------&#10;requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): www.calcatraz.com&#10;requests.packages.urllib3.connectionpool: DEBUG: "GET /calculator/api?c=9%2B0 HTTP/1.1" 200 1025&#10;--------------------- &gt;&gt; end captured logging &lt;&lt; ---------------------'><![CDATA[  File "C:\Python27\lib\unittest\case.py", line 329, in run
+    testMethod()
+  File "D:\Userfiles\vjhingran\Desktop\code_openTable\test_open_table_addition_code.py", line 200, in test_leave_second_field_blank
+    raise AssertionError
+'\n-------------------- >> begin captured stdout << ---------------------\n\n Answer from the link: 9\nShows only the second number. Need the second number to calculate addition.\n\n--------------------- >> end captured stdout << ----------------------\n-------------------- >> begin captured logging << --------------------\nrequests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): www.calcatraz.com\nrequests.packages.urllib3.connectionpool: DEBUG: "GET /calculator/api?c=9%2B0 HTTP/1.1" 200 1025\n--------------------- >> end captured logging << ---------------------']]></failure><system-out><![CDATA[
+ Answer from the link: 9
+Shows only the second number. Need the second number to calculate addition.
+]]></system-out></testcase><testcase classname="test_with_browser.TestWithBrowser" name="test_negative_browser_test" time="6.444"><system-out><![CDATA[Answer from browser: answer
+]]></system-out></testcase><testcase classname="test_with_browser.TestWithBrowser" name="test_with_browser" time="6.079"><system-out><![CDATA[Answer from browser: 7
+]]></system-out></testcase></testsuite>

@@ -12,7 +12,7 @@ class TestWithBrowser(unittest.TestCase):
 		Test with a browser to check simple addition operation.
 		"""
 		browser = self.browser
-		browser.get("http://calcatraz.com/calculator/api?c=2%2B5")
+		browser.get("https://calcatraz.com/calculator/api?c=2%2B5")
 		value = browser.find_element_by_xpath("/html/body").text
 		print "Answer from browser: " + str(value)
 
@@ -21,7 +21,7 @@ class TestWithBrowser(unittest.TestCase):
 		Test with a browser to check a negative condition.
 		"""
 		browser = self.browser
-		browser.get("http://calcatraz.com/calculator/api?c=ab2%2B5qa")
+		browser.get("https://calcatraz.com/calculator/api?c=ab2%2B5qa")
 		value = browser.find_element_by_xpath("/html/body").text
 		# Prints the value shown in the browser page.
 		print "Answer from browser: " + value
